@@ -40,3 +40,27 @@ script.
 script(src="client.js")
 
 /* Add client.js file link after the above code and variables are accessible in it */
+
+
+// 3. Add redirect capability to Ajax requests
+
+/* In Node */
+if (/* Some test to ensure transfer was successful */) {
+  return res.status(200).send({ result: "redirect", url: "/" }); /* redirects to homepage */
+}
+else {
+  return res.status(401).send({ error: "Something is wrong."} )
+}
+/* In client.js (with success option defined as below) */
+  $("#newpoll").submit((e) => {
+    $.ajax({
+      url: "/newpoll",
+      type: "post",
+      data: $("#newpoll").serialize(),
+      success: (res) => {
+        if (res.result == "redirect") {
+          window.location.replace(res.url); /* redirects to homepage */
+        }
+      }
+    });
+  });
