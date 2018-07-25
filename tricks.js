@@ -13,11 +13,11 @@ arr.map((val, ind) => {
 
 
 obj = {
-  Boston Celtics: 0,
-  Golden State Warriors: 0,
-  Houston Rockets: 0,
-  Los Angeles Lakers: 0,
-  Toronto Raptors: 0
+  "Boston Celtics": 0,
+  "Golden State Warriors": 0,
+  "Houston Rockets": 0,
+  "Los Angeles Lakers": 0,
+  "Toronto Raptors": 0
 }
 
 */
