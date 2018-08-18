@@ -64,3 +64,15 @@ else {
       }
     });
   });
+
+
+// 4. Getting import/export errors using React Router and Redux
+
+/* Use Babel, add .babelrc file, and use the following syntax */
+/* See here with Top.jsx and TopContainer.jsx: https://glitch.com/edit/#!/delirious-stem?path=app/components/Top.jsx:80:22 */
+
+export class Top extends React.Component {
+  /* constructor, state, functions, render */
+}
+
+export default Top
