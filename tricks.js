@@ -66,9 +66,9 @@ else {
   });
 
 
-// 4. Getting import/export errors using React Router and Redux
+// 4. "Uncaught Error: You must pass a component to the function returned by connect. Instead received undefined"
 
-/* Use Babel, add .babelrc file, and use the following syntax */
+/* From React Router and Redux. Use Babel in package.json, add .babelrc file, and use the following syntax */
 /* See here with Top.jsx and TopContainer.jsx: https://glitch.com/edit/#!/delirious-stem?path=app/components/Top.jsx:80:22 */
 
 export class Top extends React.Component {
