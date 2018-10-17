@@ -76,3 +76,8 @@ export class Top extends React.Component {
 }
 
 export default Top
+
+
+// 5. Convert text in Pug (like from /n to <br>)
+
+div !{val.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
